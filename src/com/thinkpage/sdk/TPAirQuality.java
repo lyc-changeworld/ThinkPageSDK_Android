@@ -12,7 +12,6 @@ public class TPAirQuality
 		try
 		{
 			SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
-			stationName = jsonResponse.getString("station");
 			aqi = jsonResponse.getDouble("aqi");
 			pm25 = jsonResponse.getDouble("aqi");
 			pm10 = jsonResponse.getDouble("pm10");
@@ -22,6 +21,7 @@ public class TPAirQuality
 			o3 = jsonResponse.getDouble("o3");
 			lastUpdate = formatter.parse(jsonResponse.getString("last_update"));
             quality = jsonResponse.getString("quality");
+            stationName = jsonResponse.getString("station");
 		}
 		catch (java.text.ParseException e) 
 		{

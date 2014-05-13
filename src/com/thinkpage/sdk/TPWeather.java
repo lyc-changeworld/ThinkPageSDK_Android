@@ -141,7 +141,4 @@ public class TPWeather {
 	 future weather information, TPWeatherFuture in the NSArray
 	 **/
 	public TPWeatherFuture[] futureWeathers;
-
-	public String sunriseTimeOfToday;
-	public String sunsetTimeOfToday;
 }

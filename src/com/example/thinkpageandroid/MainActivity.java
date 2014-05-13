@@ -6,8 +6,9 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.Toast;
+import android.widget.*;
+import java.util.*;
+import java.lang.*;
 
 public class MainActivity extends Activity implements TPWeatherManagerDelegate{
 	TPWeatherManager _weatherManager = null;
@@ -32,25 +33,25 @@ public class MainActivity extends Activity implements TPWeatherManagerDelegate{
     {
     	if (_weatherManager == null)
     	{
-    		_weatherManager = new TPWeatherManager("TPCLIENTIOS", this);
+    		_weatherManager = new TPWeatherManager(/*PUT YOUR KEY HERE*/, this);
     	}
        	EditText aText = (EditText) findViewById(R.id.editText1);
         String string = aText.getText().toString();
         switch (_fetchType) {
             case 0:
-            _weatherManager.fetchAllWeather(new TPCity(string), TPWeatherManager.TPWeatherReportLanguage.kEnglish, TPWeatherManager.TPTemperatureUnit.kCelsius, TPWeatherManager.TPAirQualitySource.kAQIAll);
+            _weatherManager.fetchAllWeather(new TPCity(string), TPWeatherManager.TPWeatherReportLanguage.kSimplifiedChinese, TPWeatherManager.TPTemperatureUnit.kCelsius, TPWeatherManager.TPAirQualitySource.kAQIAll);
             break;
             case 1:
-            _weatherManager.fetchCurrentWeather(new TPCity(string), TPWeatherManager.TPWeatherReportLanguage.kEnglish, TPWeatherManager.TPTemperatureUnit.kCelsius/*, TPWeatherManager.TPAirQualitySource.kAQIAll*/);
+            _weatherManager.fetchCurrentWeather(new TPCity(string), TPWeatherManager.TPWeatherReportLanguage.kSimplifiedChinese, TPWeatherManager.TPTemperatureUnit.kCelsius/*, TPWeatherManager.TPAirQualitySource.kAQIAll*/);
             break;
             case 2:
-            _weatherManager.fetchFutureWeather(new TPCity(string), TPWeatherManager.TPWeatherReportLanguage.kEnglish, TPWeatherManager.TPTemperatureUnit.kCelsius/*, TPWeatherManager.TPAirQualitySource.kAQIAll*/);
+            _weatherManager.fetchFutureWeather(new TPCity(string), TPWeatherManager.TPWeatherReportLanguage.kSimplifiedChinese, TPWeatherManager.TPTemperatureUnit.kCelsius/*, TPWeatherManager.TPAirQualitySource.kAQIAll*/);
             break;
             case 3:
-            _weatherManager.fetchAirQuality(new TPCity(string), TPWeatherManager.TPWeatherReportLanguage.kEnglish, TPWeatherManager.TPTemperatureUnit.kCelsius, TPWeatherManager.TPAirQualitySource.kAQIAll);
+            _weatherManager.fetchAirQuality(new TPCity(string), TPWeatherManager.TPWeatherReportLanguage.kSimplifiedChinese, TPWeatherManager.TPTemperatureUnit.kCelsius, TPWeatherManager.TPAirQualitySource.kAQIAll);
             break;
             case 4:
-            _weatherManager.fetchWeatherSuggestions(new TPCity(string), TPWeatherManager.TPWeatherReportLanguage.kEnglish, TPWeatherManager.TPTemperatureUnit.kCelsius/*, TPWeatherManager.TPAirQualitySource.kAQIAll*/);
+            _weatherManager.fetchWeatherSuggestions(new TPCity(string), TPWeatherManager.TPWeatherReportLanguage.kSimplifiedChinese, TPWeatherManager.TPTemperatureUnit.kCelsius/*, TPWeatherManager.TPAirQualitySource.kAQIAll*/);
             break;
         }
     }
@@ -58,6 +59,58 @@ public class MainActivity extends Activity implements TPWeatherManagerDelegate{
 	public void OnRequestSuccess(TPCity city, TPWeather report)
 	{
 		Toast.makeText(this, "Response received for city" + city.description(), Toast.LENGTH_LONG).show();
+        final android.widget.ListView listView = (android.widget.ListView) findViewById(R.id.listView);
+        final ArrayList<String> list = new ArrayList<String>();
+        if (report.city != null)
+            list.add("城市名: "+report.city.getName() + "ID:" + report.city.getCityID());
+        if (report.sunsetTime != null)
+            list.add("Sunset time : "+report.sunsetTime);
+        if (report.sunriseTime != null)
+            list.add("Sunset time : "+report.sunriseTime);
+        if (report.currentWeather != null)
+        {
+            list.add("天气 : "+report.currentWeather.text);
+            list.add("代码 : "+report.currentWeather.code);
+            list.add("气温 : "+report.currentWeather.temperature);
+            list.add("能见度 : "+report.currentWeather.visibility);
+            list.add("湿度 : "+report.currentWeather.humidity);
+            list.add("风速 : "+report.currentWeather.windSpeed);
+            list.add("风力 : "+report.currentWeather.windScale);
+            list.add("风向 : "+report.currentWeather.windDirection);
+        }
+        if (report.futureWeathers != null)
+        {
+            TPWeatherFuture futureWeather = report.futureWeathers[0];
+            list.add("预报日期 : "+ futureWeather.date);
+            list.add("白天 : "+ futureWeather.code1);
+            list.add("夜间 : "+ futureWeather.code2);
+            list.add("星期 : "+ futureWeather.day);
+            list.add("天气描述 : "+ futureWeather.text);
+            list.add("最高气温: "+ futureWeather.temperatureHigh);
+            list.add("最低气温: "+ futureWeather.temperatureLow);
+        }
+        if (report.airQualities != null)
+        {
+            TPAirQuality airQuality = report.airQualities[0];
+            list.add("pm10 : "+ airQuality.pm10);
+            list.add("pm25 : "+ airQuality.pm25);
+            list.add("aqi : "+ airQuality.aqi);
+            list.add("co : "+ airQuality.co);
+            list.add("no2 : "+ airQuality.no2);
+            list.add("o3: "+ airQuality.o3);
+            list.add("so2: "+ airQuality.so2);
+        }
+        if (report.weatherSuggestions != null)
+        {
+            list.add(report.weatherSuggestions.carwashBrief + ":" + report.weatherSuggestions.carwashDetails);
+            list.add(report.weatherSuggestions.dressingBrief + ":" + report.weatherSuggestions.dressingDetails);
+            list.add(report.weatherSuggestions.fluBrief + ":" + report.weatherSuggestions.fluDetails);
+            list.add(report.weatherSuggestions.sportBrief + ":" + report.weatherSuggestions.sportDetails);
+            list.add(report.weatherSuggestions.travelBrief + ":" + report.weatherSuggestions.travelBrief);
+        }
+        ArrayAdapter<String> itemsAdapter =
+                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
+        listView.setAdapter(itemsAdapter);
 	}
 	
 	public void OnRequestFailure(TPCity city, String errorString)
@@ -106,5 +159,5 @@ public class MainActivity extends Activity implements TPWeatherManagerDelegate{
         }
 
     }
-    
 }
+
