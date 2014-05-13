@@ -42,13 +42,31 @@ public void fetchAllWeather(TPCity city, TPWeatherReportLanguage language, TPTem
 ```
 这五个API和心知天气API对应，大家可以对照查看http://www.thinkpage.cn/weather/api/ API参数解释：
 
-TPCity 代表一个城市，你可以用new TPCity("城市名); 创建一个临时的城市对象
+TPCity 代表一个城市，你可以用new TPCity("城市名"); 创建一个临时的城市对象
 
 inLanguage 返回结果的语言： kEnglish：英语 kSimplifiedChinese：简体中文 kTraditionalChinese：繁体中文
 
 unit 单位： kCelsiu：摄氏度 kFahrenheit：华氏度
 
 aqi 空气质量的数据源： kAQINone：无 kAQICity：城市检测站 kAQIAll：城市所有监测站
+# 获取天气请求结果
+TPWeatherManager 的fetch API都是异步执行的。当你调用以上任意一个API后，TPWeatherManager会自动在后台线程下载最新的天气数据，并在准备就绪后通过以下接口通知用户：
+```java
+void OnRequestSuccess(TPCity city, TPWeather report);
+void OnRequestFailure(TPCity city, String errorString);
+```
+# TPWeatherManagerDelegate interface
+TPWeatherManager 需要API使用者实现TPWeatherManagerDelegate interface
+```java
+public interface TPWeatherManagerDelegate 
+{
+	void OnRequestSuccess(TPCity city, TPWeather report);
+	void OnRequestFailure(TPCity city, String errorString);
+}
+```
+在TPweatherManager完成天气数据的下载和解析后，会调OnRequestSuccess:接口，告诉应用程序对城市(TPCity )city的天气数据请求已经完成，所有信息解析好并存放在 TPWeather report 里面。
+
+在TPweatherManager因为种种原因对特定请求失败的时候，会调OnRequestFailure 方法，告诉应用程序对城市(TPCity ) city的天气数据请求失败。
 
 # 更多信息
 更多信息请访问心知天气网站： www.thinkpage.cn
