@@ -11,7 +11,7 @@ AndroidSDK
 * 专业性能：异步调用模式保证了你的应用程序的无延迟响应。对并发请求的高性能处理让你的应用开发更省心、高效。
 
 # 下载使用
-下载解压zip包，点击进入src目录，SDK源文件都在这里面。把loopj和thinkpage两个目录中的所有原文件添加到你的工程目录下，就可以使用SDK的全部功能了。
+下载解压zip包，点击进入src目录，SDK源文件都在这里面。把loopj和thinkpage两个目录中的所有源文件添加到你的工程目录下，就可以使用SDK的全部功能了。
 
 # TPWeatherManager 类
 应用通过以下构造函数初始化一个TPWeatherManager实例：
