@@ -67,6 +67,22 @@ public interface TPWeatherManagerDelegate
 在TPweatherManager完成天气数据的下载和解析后，会调OnRequestSuccess:接口，告诉应用程序对城市(TPCity )city的天气数据请求已经完成，所有信息解析好并存放在 TPWeather report 里面。
 
 在TPweatherManager因为种种原因对特定请求失败的时候，会调OnRequestFailure 方法，告诉应用程序对城市(TPCity ) city的天气数据请求失败。
+# 解析好的数据
+void OnRequestSuccess(TPCity city, TPWeather report); 将解析好的天气信息封装在TPWeather里返回来。TPWeather结构常用方法如下：
+```java
+public class TPWeather {
+
+	public String status; //返回的状态值
+	public TPCity city; //城市
+	public Date lastUpdate; //最后更新时间
+	public TPWeatherNow currentWeather; //当前天气的信息
+	public TPAirQuality[] airQualities; //空气质量信息数组
+	public String sunriseTime; //当天的日出时间
+	public String sunsetTime; //当天的日落时间
+	public TPWeatherSuggestions weatherSuggestions; //生活指数信息
+	public TPWeatherFuture[] futureWeathers; //未来几天的天气预报
+}
+```
 
 # 更多信息
 更多信息请访问心知天气网站： www.thinkpage.cn
