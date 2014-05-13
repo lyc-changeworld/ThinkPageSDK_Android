@@ -60,8 +60,19 @@ public class TPWeather {
                 catch (final JSONException ex)
                     {
 
+
                     };
-				// future weather
+
+                try
+                    {
+                    //may be the suggestion query
+                    weatherSuggestions = new TPWeatherSuggestions(weatherObj.getJSONObject("suggestion"));
+                    }
+                catch (final JSONException ex)
+                    {
+                    };
+
+                // future weather
                 try
                     {
                     //get future weather

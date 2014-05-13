@@ -33,7 +33,7 @@ public class MainActivity extends Activity implements TPWeatherManagerDelegate{
     {
     	if (_weatherManager == null)
     	{
-    		_weatherManager = new TPWeatherManager(/*PUT YOUR KEY HERE*/, this);
+    		_weatherManager = new TPWeatherManager(#INPUT YOUR KEY HERE, this);
     	}
        	EditText aText = (EditText) findViewById(R.id.editText1);
         String string = aText.getText().toString();
