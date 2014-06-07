@@ -45,7 +45,7 @@ public class TPWeatherManager
 	private AsyncHttpClient _httpClient;
 	private TPWeatherManagerDelegate _delegate;
 	private static String kAPISourceCode = "Android2.0.0";
-	private static String kBaseThinkPageAPIURL = "http://api.thinkpage.cn/v2/weather/";
+	private static String kBaseThinkPageAPIURL = "https://api.thinkpage.cn/v2/weather/";
 	
 	public TPWeatherManager(String apiKey, TPWeatherManagerDelegate delegate)
 	{
