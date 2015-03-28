@@ -1,0 +1,236 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .idea/
+* .idea/copyright/
+* .idea/copyright/profiles_settings.xml
+* .idea/encodings.xml
+* .idea/libraries/
+* .idea/libraries/android_support_v4.xml
+* .idea/libraries/android_support_v4_02e419ad34f4dbf3e6709fc0f0886e9c.xml
+* .idea/misc.xml
+* .idea/modules.xml
+* .idea/scopes/
+* .idea/scopes/scope_settings.xml
+* .idea/vcs.xml
+* .idea/workspace.xml
+* Android.iml
+* AndroidSDK.iml
+* LICENSE
+* README.md
+* ic_launcher-web.png
+* out/
+* out/production/
+* out/production/Android/
+* out/production/Android/Android.apk
+* out/production/Android/Android.unaligned.apk
+* out/production/Android/com/
+* out/production/Android/com/example/
+* out/production/Android/com/example/thinkpageandroid/
+* out/production/Android/com/example/thinkpageandroid/BuildConfig.class
+* out/production/Android/com/example/thinkpageandroid/MainActivity.class
+* out/production/Android/com/example/thinkpageandroid/R$attr.class
+* out/production/Android/com/example/thinkpageandroid/R$dimen.class
+* out/production/Android/com/example/thinkpageandroid/R$drawable.class
+* out/production/Android/com/example/thinkpageandroid/R$id.class
+* out/production/Android/com/example/thinkpageandroid/R$layout.class
+* out/production/Android/com/example/thinkpageandroid/R$menu.class
+* out/production/Android/com/example/thinkpageandroid/R$string.class
+* out/production/Android/com/example/thinkpageandroid/R$style.class
+* out/production/Android/com/example/thinkpageandroid/R.class
+* out/production/Android/com/loopj/
+* out/production/Android/com/loopj/android/
+* out/production/Android/com/loopj/android/http/
+* out/production/Android/com/loopj/android/http/AsyncHttpClient$1.class
+* out/production/Android/com/loopj/android/http/AsyncHttpClient$2.class
+* out/production/Android/com/loopj/android/http/AsyncHttpClient$3.class
+* out/production/Android/com/loopj/android/http/AsyncHttpClient$4.class
+* out/production/Android/com/loopj/android/http/AsyncHttpClient$InflatingEntity.class
+* out/production/Android/com/loopj/android/http/AsyncHttpClient.class
+* out/production/Android/com/loopj/android/http/AsyncHttpRequest.class
+* out/production/Android/com/loopj/android/http/AsyncHttpResponseHandler$ResponderHandler.class
+* out/production/Android/com/loopj/android/http/AsyncHttpResponseHandler.class
+* out/production/Android/com/loopj/android/http/Base64$Coder.class
+* out/production/Android/com/loopj/android/http/Base64$Decoder.class
+* out/production/Android/com/loopj/android/http/Base64$Encoder.class
+* out/production/Android/com/loopj/android/http/Base64.class
+* out/production/Android/com/loopj/android/http/Base64DataException.class
+* out/production/Android/com/loopj/android/http/Base64OutputStream.class
+* out/production/Android/com/loopj/android/http/BaseJsonHttpResponseHandler$1$1.class
+* out/production/Android/com/loopj/android/http/BaseJsonHttpResponseHandler$1$2.class
+* out/production/Android/com/loopj/android/http/BaseJsonHttpResponseHandler$1.class
+* out/production/Android/com/loopj/android/http/BaseJsonHttpResponseHandler$2$1.class
+* out/production/Android/com/loopj/android/http/BaseJsonHttpResponseHandler$2$2.class
+* out/production/Android/com/loopj/android/http/BaseJsonHttpResponseHandler$2.class
+* out/production/Android/com/loopj/android/http/BaseJsonHttpResponseHandler.class
+* out/production/Android/com/loopj/android/http/BinaryHttpResponseHandler.class
+* out/production/Android/com/loopj/android/http/DataAsyncHttpResponseHandler.class
+* out/production/Android/com/loopj/android/http/FileAsyncHttpResponseHandler.class
+* out/production/Android/com/loopj/android/http/JsonHttpResponseHandler$1$1.class
+* out/production/Android/com/loopj/android/http/JsonHttpResponseHandler$1$2.class
+* out/production/Android/com/loopj/android/http/JsonHttpResponseHandler$1.class
+* out/production/Android/com/loopj/android/http/JsonHttpResponseHandler$2$1.class
+* out/production/Android/com/loopj/android/http/JsonHttpResponseHandler$2$2.class
+* out/production/Android/com/loopj/android/http/JsonHttpResponseHandler$2.class
+* out/production/Android/com/loopj/android/http/JsonHttpResponseHandler.class
+* out/production/Android/com/loopj/android/http/JsonStreamerEntity.class
+* out/production/Android/com/loopj/android/http/MySSLSocketFactory$1.class
+* out/production/Android/com/loopj/android/http/MySSLSocketFactory.class
+* out/production/Android/com/loopj/android/http/PersistentCookieStore.class
+* out/production/Android/com/loopj/android/http/PreemtiveAuthorizationHttpRequestInterceptor.class
+* out/production/Android/com/loopj/android/http/RangeFileAsyncHttpResponseHandler.class
+* out/production/Android/com/loopj/android/http/RequestHandle.class
+* out/production/Android/com/loopj/android/http/RequestParams$1.class
+* out/production/Android/com/loopj/android/http/RequestParams$FileWrapper.class
+* out/production/Android/com/loopj/android/http/RequestParams$StreamWrapper.class
+* out/production/Android/com/loopj/android/http/RequestParams.class
+* out/production/Android/com/loopj/android/http/ResponseHandlerInterface.class
+* out/production/Android/com/loopj/android/http/RetryHandler.class
+* out/production/Android/com/loopj/android/http/SerializableCookie.class
+* out/production/Android/com/loopj/android/http/SimpleMultipartEntity$FilePart.class
+* out/production/Android/com/loopj/android/http/SimpleMultipartEntity.class
+* out/production/Android/com/loopj/android/http/SyncHttpClient.class
+* out/production/Android/com/loopj/android/http/TextHttpResponseHandler.class
+* out/production/Android/com/thinkpage/
+* out/production/Android/com/thinkpage/sdk/
+* out/production/Android/com/thinkpage/sdk/TPAirQuality.class
+* out/production/Android/com/thinkpage/sdk/TPCity.class
+* out/production/Android/com/thinkpage/sdk/TPWeather.class
+* out/production/Android/com/thinkpage/sdk/TPWeatherFuture.class
+* out/production/Android/com/thinkpage/sdk/TPWeatherManager$1.class
+* out/production/Android/com/thinkpage/sdk/TPWeatherManager$TPAirQualitySource.class
+* out/production/Android/com/thinkpage/sdk/TPWeatherManager$TPJsonHttpResponseHandler.class
+* out/production/Android/com/thinkpage/sdk/TPWeatherManager$TPTemperatureUnit.class
+* out/production/Android/com/thinkpage/sdk/TPWeatherManager$TPWeatherReportLanguage.class
+* out/production/Android/com/thinkpage/sdk/TPWeatherManager.class
+* out/production/Android/com/thinkpage/sdk/TPWeatherManagerDelegate.class
+* out/production/Android/com/thinkpage/sdk/TPWeatherNow.class
+* out/production/Android/com/thinkpage/sdk/TPWeatherSuggestions.class
+* out/production/AndroidSDK/
+* out/production/AndroidSDK/AndroidSDK.apk
+* out/production/AndroidSDK/AndroidSDK.unaligned.apk
+* out/production/AndroidSDK/com/
+* out/production/AndroidSDK/com/example/
+* out/production/AndroidSDK/com/example/thinkpageandroid/
+* out/production/AndroidSDK/com/example/thinkpageandroid/BuildConfig.class
+* out/production/AndroidSDK/com/example/thinkpageandroid/MainActivity.class
+* out/production/AndroidSDK/com/example/thinkpageandroid/R$attr.class
+* out/production/AndroidSDK/com/example/thinkpageandroid/R$dimen.class
+* out/production/AndroidSDK/com/example/thinkpageandroid/R$drawable.class
+* out/production/AndroidSDK/com/example/thinkpageandroid/R$id.class
+* out/production/AndroidSDK/com/example/thinkpageandroid/R$layout.class
+* out/production/AndroidSDK/com/example/thinkpageandroid/R$menu.class
+* out/production/AndroidSDK/com/example/thinkpageandroid/R$string.class
+* out/production/AndroidSDK/com/example/thinkpageandroid/R$style.class
+* out/production/AndroidSDK/com/example/thinkpageandroid/R.class
+* out/production/AndroidSDK/com/loopj/
+* out/production/AndroidSDK/com/loopj/android/
+* out/production/AndroidSDK/com/loopj/android/http/
+* out/production/AndroidSDK/com/loopj/android/http/AsyncHttpClient$1.class
+* out/production/AndroidSDK/com/loopj/android/http/AsyncHttpClient$2.class
+* out/production/AndroidSDK/com/loopj/android/http/AsyncHttpClient$3.class
+* out/production/AndroidSDK/com/loopj/android/http/AsyncHttpClient$4.class
+* out/production/AndroidSDK/com/loopj/android/http/AsyncHttpClient$InflatingEntity.class
+* out/production/AndroidSDK/com/loopj/android/http/AsyncHttpClient.class
+* out/production/AndroidSDK/com/loopj/android/http/AsyncHttpRequest.class
+* out/production/AndroidSDK/com/loopj/android/http/AsyncHttpResponseHandler$ResponderHandler.class
+* out/production/AndroidSDK/com/loopj/android/http/AsyncHttpResponseHandler.class
+* out/production/AndroidSDK/com/loopj/android/http/Base64$Coder.class
+* out/production/AndroidSDK/com/loopj/android/http/Base64$Decoder.class
+* out/production/AndroidSDK/com/loopj/android/http/Base64$Encoder.class
+* out/production/AndroidSDK/com/loopj/android/http/Base64.class
+* out/production/AndroidSDK/com/loopj/android/http/Base64DataException.class
+* out/production/AndroidSDK/com/loopj/android/http/Base64OutputStream.class
+* out/production/AndroidSDK/com/loopj/android/http/BaseJsonHttpResponseHandler$1$1.class
+* out/production/AndroidSDK/com/loopj/android/http/BaseJsonHttpResponseHandler$1$2.class
+* out/production/AndroidSDK/com/loopj/android/http/BaseJsonHttpResponseHandler$1.class
+* out/production/AndroidSDK/com/loopj/android/http/BaseJsonHttpResponseHandler$2$1.class
+* out/production/AndroidSDK/com/loopj/android/http/BaseJsonHttpResponseHandler$2$2.class
+* out/production/AndroidSDK/com/loopj/android/http/BaseJsonHttpResponseHandler$2.class
+* out/production/AndroidSDK/com/loopj/android/http/BaseJsonHttpResponseHandler.class
+* out/production/AndroidSDK/com/loopj/android/http/BinaryHttpResponseHandler.class
+* out/production/AndroidSDK/com/loopj/android/http/DataAsyncHttpResponseHandler.class
+* out/production/AndroidSDK/com/loopj/android/http/FileAsyncHttpResponseHandler.class
+* out/production/AndroidSDK/com/loopj/android/http/JsonHttpResponseHandler$1$1.class
+* out/production/AndroidSDK/com/loopj/android/http/JsonHttpResponseHandler$1$2.class
+* out/production/AndroidSDK/com/loopj/android/http/JsonHttpResponseHandler$1.class
+* out/production/AndroidSDK/com/loopj/android/http/JsonHttpResponseHandler$2$1.class
+* out/production/AndroidSDK/com/loopj/android/http/JsonHttpResponseHandler$2$2.class
+* out/production/AndroidSDK/com/loopj/android/http/JsonHttpResponseHandler$2.class
+* out/production/AndroidSDK/com/loopj/android/http/JsonHttpResponseHandler.class
+* out/production/AndroidSDK/com/loopj/android/http/JsonStreamerEntity.class
+* out/production/AndroidSDK/com/loopj/android/http/MySSLSocketFactory$1.class
+* out/production/AndroidSDK/com/loopj/android/http/MySSLSocketFactory.class
+* out/production/AndroidSDK/com/loopj/android/http/PersistentCookieStore.class
+* out/production/AndroidSDK/com/loopj/android/http/PreemtiveAuthorizationHttpRequestInterceptor.class
+* out/production/AndroidSDK/com/loopj/android/http/RangeFileAsyncHttpResponseHandler.class
+* out/production/AndroidSDK/com/loopj/android/http/RequestHandle.class
+* out/production/AndroidSDK/com/loopj/android/http/RequestParams$1.class
+* out/production/AndroidSDK/com/loopj/android/http/RequestParams$FileWrapper.class
+* out/production/AndroidSDK/com/loopj/android/http/RequestParams$StreamWrapper.class
+* out/production/AndroidSDK/com/loopj/android/http/RequestParams.class
+* out/production/AndroidSDK/com/loopj/android/http/ResponseHandlerInterface.class
+* out/production/AndroidSDK/com/loopj/android/http/RetryHandler.class
+* out/production/AndroidSDK/com/loopj/android/http/SerializableCookie.class
+* out/production/AndroidSDK/com/loopj/android/http/SimpleMultipartEntity$FilePart.class
+* out/production/AndroidSDK/com/loopj/android/http/SimpleMultipartEntity.class
+* out/production/AndroidSDK/com/loopj/android/http/SyncHttpClient.class
+* out/production/AndroidSDK/com/loopj/android/http/TextHttpResponseHandler.class
+* out/production/AndroidSDK/com/thinkpage/
+* out/production/AndroidSDK/com/thinkpage/sdk/
+* out/production/AndroidSDK/com/thinkpage/sdk/TPAirQuality.class
+* out/production/AndroidSDK/com/thinkpage/sdk/TPCity.class
+* out/production/AndroidSDK/com/thinkpage/sdk/TPWeather.class
+* out/production/AndroidSDK/com/thinkpage/sdk/TPWeatherFuture.class
+* out/production/AndroidSDK/com/thinkpage/sdk/TPWeatherManager$1.class
+* out/production/AndroidSDK/com/thinkpage/sdk/TPWeatherManager$TPAirQualitySource.class
+* out/production/AndroidSDK/com/thinkpage/sdk/TPWeatherManager$TPJsonHttpResponseHandler.class
+* out/production/AndroidSDK/com/thinkpage/sdk/TPWeatherManager$TPTemperatureUnit.class
+* out/production/AndroidSDK/com/thinkpage/sdk/TPWeatherManager$TPWeatherReportLanguage.class
+* out/production/AndroidSDK/com/thinkpage/sdk/TPWeatherManager.class
+* out/production/AndroidSDK/com/thinkpage/sdk/TPWeatherManagerDelegate.class
+* out/production/AndroidSDK/com/thinkpage/sdk/TPWeatherNow.class
+* out/production/AndroidSDK/com/thinkpage/sdk/TPWeatherSuggestions.class
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
