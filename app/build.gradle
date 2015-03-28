@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
+    compileSdkVersion 21
     buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "com.example.thinkpageandroid"
         minSdkVersion 8
-        targetSdkVersion 18
+        targetSdkVersion 21
     }
 
     buildTypes {
@@ -21,5 +21,5 @@ android {
 dependencies {
     compile 'com.android.support:support-v4:19.1.0'
     provided project(':android-async-http-1.4.6')
-    compile files('/Users/wewei/AndroidStudioProjects/ThinkPageSDK_Android/android-async-http-1.4.6/android-async-http-1.4.6.jar')
+    compile project(':sdk')
 }
